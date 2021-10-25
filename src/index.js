@@ -81,7 +81,6 @@ const isValidFields = () => {
               createClient(client)
               updateTable()
               clearFields()
-              //index = 'used'
               closeModal()
                 
             }else{
@@ -133,7 +132,7 @@ const editClient = (index) => {
 
         const client = readClient()[index];
         client.index = index
-        console.log(readClient[index])
+        
 
         //fillFields(client)
         /*
