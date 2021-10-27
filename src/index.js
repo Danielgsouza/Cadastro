@@ -1,23 +1,4 @@
 'use strict'
-/*
-const openModal = () => {
-    document.querySelector('.fade').classList.add('show')
-}
-*/
-const closeModal = () => {
-    //let modal = document.querySelector('#exampleModal')
-    //modal.setAttribute('style', 'display: block')
-    //modal.setAttribute('style', 'visibility: hidden')
-    //modal.setAttribute('style', 'display: none')
-   // modal.dispose()
-   //$ (". Modal-backdrop"). Remove ();
-   
-   // modal.setAttribute('data-bs-dismiss=', 'modal')
-
-   //document.getElementsByTagName('body').classList.remove('.modal-open')
-
-
-}
 
 const getLocalStorage = () => JSON.parse(localStorage.getItem('dataClient')) ?? []
 
@@ -81,15 +62,10 @@ const isValidFields = () => {
               createClient(client)
               updateTable()
               clearFields()
-              closeModal()
-                
             }else{
               updateClient(index, client)
               updateTable()
               clearFields()
-              closeModal()
-              
-             
             }
     }     
        
